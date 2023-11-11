@@ -15,7 +15,7 @@ public class ProxyInternet implements Internet {
         bannedSites.add("lnm.com");
 
         if(bannedSites.contains(serverhost.toLowerCase())) {
-            throw new Exception("Access Denied");
+            throw new Exception( "Access Denied");
         }
 
         internet.connectTo(serverhost);
